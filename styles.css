@@ -81,15 +81,15 @@ h1,
 h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 2rem;
 }
 
 ul {
@@ -162,7 +162,7 @@ img {
   background-position: center 70%;
 }
 
-.home-page img {
+.home-page > img {
   width: 15%;
   border-radius: 50%;
 }
@@ -170,7 +170,7 @@ img {
 .home-page > p {
   width: 40%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
@@ -183,38 +183,118 @@ img {
   width: 100%;
 }
 
-.about-me .content {
+.about-me >.content {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
   width: 100%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   /* margin-left: 20%; */
   /* padding-right: 40px; */
 }
 
-.about-me .content .image-frame {
-  width: 17.5%;
-  height: 55%;
-  position: absolute;
-  top: 96.5%;
-  left: 13.5%;
-  background-color: #303841;
-  z-index: -1;
-}
-
-.about-me .content .image {
+.image {
+  background-color: #1f1f1f;
   margin-left: 15%;
-  width: 25%;
+  width: 35%;
+  height: fit-content;
+  margin-top: 6rem;
+  border: 1px solid black;
 }
 
-.about-me .content .description {
+.image > img {
+  width: 95%;
+  margin: 1rem auto;
+  border-radius: 2rem;
+}
+
+.description {
   width: 80%;
-  align-items: center;
+  /* align-items: center; */
   margin-left: 4rem;
   padding-right: 20%;
 }
 
+.summary {
+  margin-top: 3rem;
+}
+.horizontal-rule {
+  width: 65px;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.skillset {
+  margin-top: 2rem;
+  border: 0.3rem solid black;
+  padding: 2rem;
+  font-size: small;
+}
+
+.skill {
+  margin-top: 0.5rem;
+}
+
+.skill p {
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  /* height: 90%; */
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.cv-button {
+  padding: 0 20px;
+  height: 40px;
+  font-size: smaller;
+  font-weight: bold;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.services {
+  color: #303841;
+  width: 100%;
+}
+
+.services >.content {
+  margin-top: 9rem;
+  margin-left: 15%;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+}
+
+.container {
+  border: 2px solid #1f1f1f;
+  width: 25%;
+  margin: 1rem;
+  color: #1f1f1f;
+  background-color: transparent;
+  padding: 1rem;
+}
 /* Projects section */
 
 .projects-section {
@@ -239,7 +319,7 @@ img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 0.5rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
