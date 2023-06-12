@@ -295,6 +295,17 @@ img {
   background-color: transparent;
   padding: 1rem;
 }
+
+.icons {
+  margin-top: 4px;
+  width: 30px;
+  height: 40px;
+  align-items: center;
+}
+
+.container p {
+  font-size: smaller;
+}
 /* Projects section */
 
 .projects-section {
