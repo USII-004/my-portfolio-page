@@ -1,8 +1,8 @@
 /* Custom properties/variables  */
 :root {
-  --main-body: #edeae5;
-  --main-nav: #303842;
-  --main-text: #e5e6c5;
+  --main-body: #e7eaea;
+  --main-nav: #303841;
+  --main-text: #fffefe;
   --main-blue: #45567d;
   --main-gray: #303841;
 }
@@ -194,7 +194,7 @@ img {
 }
 
 .image {
-  background-color: #1f1f1f;
+  background-color: var(--main-gray);
   margin-left: 15%;
   width: 35%;
   height: fit-content;
@@ -249,7 +249,7 @@ img {
 }
 
 .progress-bar::-webkit-progress-bar {
-  background-color: black;
+  background-color: var(--main-nav);
   border-radius: 10px;
 }
 
@@ -408,13 +408,13 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   padding: 0 2rem;
   background: var(--main-gray);
 }
 
 .contact-section-header > h2 {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 28.75em) {
@@ -432,12 +432,12 @@ img {
   justify-content: center;
   width: 100%;
   max-width: 980px;
-  margin-top: 4rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
 }
 
 .contact-details {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
@@ -454,11 +454,11 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
 }
 
 footer > p {
-  margin: 2rem;
+  margin-top: 2rem;
+  font-style: italic;
 }
 
 footer i {
