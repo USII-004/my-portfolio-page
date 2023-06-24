@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -19,12 +19,13 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/c66bee6c1f.js" crossorigin="anonymous"></script>
+    <title>Usman Awwal portfolio site</title>
   </head>
   <body>
     <!-- START NAV -->
 
     <nav id="navbar" class="nav">
-      <ul class="nav-list">
+      <ul class="nav-list" id="navlinks">
         <li>
           <a href="#home-page">Home</a>
         </li>
@@ -43,14 +44,15 @@
       </ul>
     </nav>
 
+    <div class="dropdown-icon"><i class="fa fa-bars" onclick="togglemenu()"></i></div>
     <!-- END NAV -->
 
     <!-- START HOME PAGE -->
 
     <section id="home-page" class="home-page">
-      <img src="Usii_passport_L.jpg" alt="profile image">
+      <img src="image/Usii_passport_L.jpg" alt="profile image">
       <h1>Usman Awwal</h1>
-      <p>a Web developer, Cyber security analyst, Forex, Crypto, and NFT Trader</p>
+      <p>B.Tech. Cyber Security Science, Web Development(JS, React) Forex Trader, Web 3 Ethusiast</p>
     </section>
 
     <!-- END HOME PAGE -->
@@ -60,7 +62,7 @@
     <section id="about-me" class="about-me">
       <div class="content">
         <div class="image">
-          <img src="IMG_6860.jpg" alt="about-me image">
+          <img src="image/IMG_6860.jpg" alt="about-me image">
         </div>
         <div class="description">
           <h2>Discover</h2>
@@ -329,6 +331,7 @@
     </footer>
 
     <!-- END FOOTER SECTION -->
+    <script src="javascript.js" type="text/javaScript"></script>
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
 s
